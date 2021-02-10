@@ -2,6 +2,8 @@
 #![doc(html_root_url = "https://docs.rs/curl-sys/0.3")]
 
 extern crate libc;
+#[cfg(feature = "rustls")]
+extern crate crustls;
 #[cfg(link_libnghttp2)]
 extern crate libnghttp2_sys;
 #[cfg(link_libz)]
